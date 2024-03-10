@@ -1,0 +1,15 @@
+[
+  {
+    "WorkflowName": "Transfer",
+    "Rules": [
+      {
+        "RuleName": "BalanceControl",
+        "SuccessEvent": "10",
+        "ErrorMessage": "you do not have enough funds for this transaction.",
+        "ErrorType": "Error",
+        "RuleExpressionType": "LambdaExpression",
+        "Expression": "input1.Balance >= input2"
+      }
+    ]
+  }
+]
